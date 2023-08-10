@@ -1,0 +1,258 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .mycontainer{
+        @apply mx-auto smm:max-w-2xl sm:max-w-2xl md:max-w-3xl lg:max-w-4xl xl:max-w-4xl 2xl:max-w-4xl
+    }
+    .h-li{
+        @apply mx-[0.89rem] flex items-center
+    }
+    .h-li-a{
+        @apply hover:border-b-4 hover:border-[#f63e02] 
+    }
+    .h-submenu-span{
+        @apply text-end text-gray-400
+    }
+    .img-small{
+        @apply rounded-full w-12 border-[3px] border-white border-solid 
+    }
+    .title{
+        @apply hover:after:content-[attr(data-title)] hover:after:text-white hover:after:bg-black hover:after:opacity-80
+        hover:after:rounded-md  hover:after:px-2 hover:after:py-1 hover:after:text-sm hover:after:absolute hover:after:mt-2
+        hover:after:ml-2 
+          
+    }
+    .img-small-b{
+        @apply  px-2 hover:opacity-100 
+    }
+    .text-gray{
+        @apply  text-gray-600 smm:text-sm sm:text-lg md:text-lg lg:text-lg xl:text-lg 2xl:text-lg
+    }
+    .text-gray-lg{
+        @apply  text-gray-500 font-bold smm:text-base sm:text-lg md:text-lg lg:text-lg xl:text-lg 2xl:text-lg
+    }
+    .btn{
+        @apply bg-[#f63e02] border-[#f63e02] rounded-3xl  text-white
+    }
+    .footer-div-a{
+        @apply p-2 rounded-md w-1/3
+    }
+    
+    .footer-div-b{
+        @apply flex justify-between rounded-md bg-white pt-2 pb-3 px-3 items-center
+    }
+    .footer-icon-a{
+        @apply px-2 text-2xl text-[#212529] hover:text-black 
+    }
+    .footer-btn-a{
+        @apply rounded-3xl border-[2px] border-[#ced4da] pt-2 pb-3 px-4 text-sm font-bold text-[#6c757d]
+    }
+    .footer-btn-b{
+        @apply rounded-3xl border-[2px] border-[#f63e02] pt-2 pb-3 px-4 text-sm font-bold text-[#f63e02]
+    }
+    .footer-btn-c{
+        @apply rounded-3xl border-[2px] border-[#f63e02] pt-2 pb-3 px-4 text-sm font-bold bg-[#f63e02] text-white
+    }
+    .footer-icon-b{
+        @apply  text-[#fcc5b3] ml-2
+    }
+    .footer-icon-c{
+        @apply  text-[#f63e02] ml-2
+    }
+    
+}
+@layer base{
+    .font-byekan{
+        @font-face {
+            font-family:BYekan;
+            src: url('./B_Yekan/YekanBakh-Bold.ttf');
+        }
+        font-family: BYekan;
+    }
+    .div-rotate{
+        @apply w-1/5 origin-center rotate-90 flex items-center justify-center 
+    }
+    .text-large{
+        @apply text-6xl font-black box-border   text-[#c7dcf5]
+    }
+    .h-li-mobile{
+        @apply  my-[1.5rem]  items-center
+    }
+}
+@layer utilities{
+    .visibility{
+        @apply smm:hidden sm:hidden md:hidden lg:block xl:block 2xl:block
+    }
+    .visibility-reverse{
+        @apply smm:block sm:block md:block lg:hidden xl:hidden 2xl:hidden 
+    }
+    .rsponsibleWords{
+        @apply smm:text-4xl sm:text-4xl md:text-4xl lg:text-7xl xl:text-7xl 2xl:text-7xl 
+                smm:font-black sm:font-black md:font-black lg:font-black xl:font-black 2xl:font-black
+    }
+    .rsponsibleWord{
+        @apply smm:text-4xl sm:text-4xl md:text-4xl lg:text-7xl xl:text-7xl 2xl:text-7xl 
+               
+    }
+    .responsive{
+        @apply smm:w-28 sm:w-full md:w-full lg:w-full xl:w-full 2xl:w-full
+     }
+    .responsive-1{
+       @apply smm:w-full sm:w-1/2 md:w-2/5 lg:w-1/2 xl:w-1/2 2xl:w-1/2
+                smm:h-16  sm:h-fit  md:h-fit lg:h-fit xl:h-fit 2xl:h-fit 
+    }
+    
+    .responsive-2{
+       @apply smm:w-full sm:w-1/2 md:w-4/5 lg:w-1/2 xl:lg:w-1/2 2xl:lg:w-1/2
+    }
+    .responsive-3{
+        @apply smm:w-44 sm:w-44 md:w-28 lg:w-32 xl:w-32 2xl:w-32
+    }
+    .responsive-justify{
+        @apply smm:justify-center sm:justify-end md:justify-end lg:justify-end xl:justify-end 2xl:justify-end
+    }
+    .responsive-justify-2{
+        @apply smm:justify-center sm:justify-start md:justify-start lg:justify-start xl:justify-start 2xl:justify-start
+    }
+    .responsive-img-1{
+        @apply smm:w-44 sm:w-72 md:w-56 lg:w-72 xl:w-72 2xl:w-72
+                 smm:top-20 sm:top-28 md:top-28  lg:top-28  xl:top-28  2xl:top-28 
+    }
+    .responsive-img-2{
+        @apply smm:w-44 sm:w-72 md:w-56 lg:w-72 xl:w-72 2xl:w-72
+                smm:left-2 sm:left-2 md:left-10 lg:left-0 xl:left-0 2xl:left-0
+    }
+    .responsive-img-width{
+        @apply smm:w-[17rem] sm:w-[28rem] md:w-[28rem] lg:w-[28rem] xl:w-[28rem] 2xl:w-[28rem]
+    }
+    .responsive-H{
+        @apply smm:h-[22rem] sm:h-[30rem] md:h-[30rem] lg:h-[30rem] xl:h-[30rem] 2xl:h-[30rem]
+    }
+    .responsive-MT{
+        @apply smm:mt-10 sm:mt-20 md:mt-20 lg:mt-20 xl:mt-20 2xl:mt-20
+    }
+
+    .responsive-main{
+        @apply smm:px-3 sm:px-3 md:px-3 lg:px-0 xl:px-0 2xl:px-0
+    }
+    .responsive-P-1{
+        @apply smm:px-1 sm:px-2 md:px-2 lg:px-2 xl:px-2 2xl:px-2
+    }
+    .responsive-text-1{
+        @apply smm:text-[20px] sm:text-[20px] md:text-[20px] lg:text-[20px] xl:text-[20px] 2xl:text-[20px]
+    }
+    .responsive-text-2{
+        @apply smm:text-[18px] sm:text-[18px] md:text-[18px] lg:text-[18px] xl:text-[18px] 2xl:text-[18px]
+    }
+    .responsive-text-3{
+        @apply smm:text-[17px] sm:text-[17px] md:text-[17px] lg:text-[17px] xl:text-[17px] 2xl:text-[17px]
+    }
+    .responsive-text-4{
+        @apply smm:text-lg sm:text-lg md:text-lg lg:text-base xl:text-base 2xl:text-base
+    }
+    .responsive-text-5{
+        @apply smm:text-xl sm:text-2xl md:text-2xl lg:text-2xl xl:text-2xl 2xl:text-2xl
+    }
+    .responsive-text-6{
+        @apply smm:text-[16px] sm:text-sm md:text-sm lg:text-sm xl:text-sm 2xl:text-sm
+    }
+    .responsive-text-7{
+        @apply smm:text-xl sm:text-xl md:text-xl lg:text-xl xl:text-xl 2xl:text-xl
+    }
+    .responsive-text-8{
+        @apply smm:text-[20px] sm:text-base md:text-base lg:text-base xl:text-base 2xl:text-base
+    }
+    .responsive-text-9{
+        @apply smm:text-3xl sm:text-5xl md:text-5xl lg:text-5xl xl:text-5xl 2xl:text-5xl
+    }
+    .responsive-text-10{
+        @apply smm:text-2xl sm:text-4xl md:text-4xl lg:text-4xl xl:text-4xl 2xl:text-4xl
+    }
+    .responsive-card-width{
+        @apply smm:w-full sm:w-full md:w-60 lg:w-72 xl:w-72 2xl:w-72
+    }
+    .responsive-card-width-img{
+        @apply smm:w-full sm:w-full md:w-60 lg:w-72 xl:w-72 2xl:w-72
+                smm:h-96 sm:h-96 md:h-auto lg:h-auto xl:h-auto 2xl:h-auto
+    }
+    .responsive-card-MP{
+        @apply smm:ml-0 sm:ml-0 md:ml-4 lg:ml-4 xl:ml-4 2xl:ml-4
+                smm:mb-4 sm:mb-4 md:mb-0 lg:mb-0 xl:mb-0 2xl:mb-0
+    }
+    .responsive-card-flex{
+        @apply smm:block sm:block md:flex lg:flex xl:flex 2xl:flex
+    }
+    .responsive-card-text{
+        @apply smm:text-3xl sm:text-3xl md:text-3xl lg:text-4xl xl:text-4xl 2xl:text-4xl
+    }
+    
+    .responsive-bg{
+        @apply smm:bg-[#f8f9fa] sm:bg-[#f8f9fa] md:bg-white lg:bg-white xl:bg-white 2xl:bg-white
+    }
+    .responsive-width{
+        @apply smm:w-full sm:w-full md:w-1/2 lg:w-1/2 xl:w-1/2 2xl:w-1/2
+    }
+    .responsive-width-2{
+        @apply smm:w-full sm:w-full md:w-1/3 lg:w-1/3 xl:w-1/3 2xl:w-1/3
+    }
+    .responsive-width-3{
+        @apply smm:w-full sm:w-full md:w-2/3 lg:w-2/3 xl:w-2/3 2xl:w-2/3
+    }
+    .responsive-width-4{
+        @apply smm:w-full sm:w-full md:w-full lg:w-2/3 xl:w-2/3 2xl:w-2/3
+    }
+    .responsive-width-5{
+        @apply smm:w-full sm:w-full md:w-full lg:w-2/3 xl:w-2/3 2xl:w-2/3
+    }
+    .responsive-width-6{
+        @apply smm:w-8 sm:w-12 md:w-12 lg:w-12 xl:w-12 2xl:w-12
+    }
+    .responsive-width-7{
+        @apply smm:w-full sm:w-1/2 md:w-1/2 lg:w-1/2 xl:w-1/2 2xl:w-1/2
+    }
+    .responsive-width-8{
+        @apply smm:w-12 sm:w-14 md:w-14 lg:w-14 xl:w-14 2xl:w-14
+    }
+    .responsive-width-9{
+        @apply smm:w-full sm:w-[25rem] md:w-[25rem] lg:w-[25rem] xl:w-[25rem] 2xl:w-[25rem]
+    }
+    .responsive-M{
+        @apply smm:mt-6 sm:mt-6 md:mt-14 lg:mt-14 xl:mt-14 2xl:mt-14
+    }
+    .responsive-M-2{
+        @apply smm:mb-4 sm:mb-2 md:mb-2 lg:mb-0 xl:mb-0 2xl:mb-0
+    }
+    .responsive-M-3{
+        @apply smm:mb-2 sm:mb-0 md:mb-0 lg:mb-0 xl:mb-0 2xl:mb-0
+    }
+    .responsive-M-4{
+        @apply smm:ml-0 sm:ml-4 md:ml-4 lg:ml-5 xl:ml-5 2xl:ml-5
+    }
+    .responsive-MP{
+        @apply smm:mr-0 sm:mr-0 md:mr-0 lg:mr-2 xl:mr-2 2xl:mr-2
+             smm:mt-4 sm:mt-4  md:mt-4  lg:mt-0 xl:mt-0 2xl:mt-0
+       
+    }
+    .responsive-flex{
+        @apply smm:block sm:block md:block lg:flex xl:flex 2xl:flex
+    }
+    .responsive-flex-2{
+        @apply smm:flex sm:flex md:block lg:block xl:block 2xl:block
+    }
+    .responsive-flex-3{
+        @apply smm:block sm:flex md:flex lg:flex xl:flex 2xl:flex
+    }
+    
+    .responsive-footer{
+        @apply smm:px-3 sm:px-3 md:px-3 lg:px-0 xl:px-0 2xl:px-0
+    }
+    .responsive-P-2{
+        @apply smm:pt-0 sm:pt-0 md:pt-12 lg:pt-12 xl:pt-12 2xl:pt-12
+    }
+    .responsive-P-3{
+        @apply smm:pb-0 sm:pb-2 md:pb-2 lg:pb-2 xl:pb-2 2xl:pb-2
+    }
+    
+}

@@ -1,0 +1,1424 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>میلین-ساز زندگی تو/</title>
+    
+    <link rel="stylesheet" href="../css/main.css">
+    <style>
+        .test{
+            position: relative;
+        display: inline-block;
+        margin-top: 50px;
+        font-size: 1.5em;
+        color: aquamarine;
+        }
+        .test:hover {
+        
+        color: aquamarine;
+        
+      }
+
+    </style>
+    <script src="https://kit.fontawesome.com/03ec64eac3.js" crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
+</head>
+<body class="font-byekan"  >
+    <!-- Header in desktop mode -->
+    <header class=" visibility" >
+        <section class="border-b border-slate-300 py-1.5 text-sm">
+            <div class="flex mycontainer">
+                <div class="flex w-1/2">
+                    <div>
+                        <i class="fa-solid fa-location-dot text-[20px]"></i>
+                        <span class="font-bold">
+                            ایران | تهران
+                        </span>
+                    </div>
+                    <div class="mx-3">
+                        <div class=" bg-slate-300 w-[0.5px]  " ><br></div>
+                    </div>
+                </div>
+                <div class="flex w-1/2 justify-end">
+                    <div>
+                        <a href="" class="no-underline text-black">
+                            <i class="fa-solid fa-phone-volume text-[18px] ml-1"></i>
+                            <span class="font-bold">برقراری تماس از طرف میلین</span>
+                        </a>
+                    </div>
+                    <div class="mr-2 ml-1">
+                        <div class=" bg-slate-300 w-[0.5px] " ><br></div>
+                    </div>
+                    <div class="px-1.5">
+                        <a href="">
+                            <i class="fa-brands fa-facebook px-2 text-[20px]"></i>
+                        </a>
+                        <a href="">
+                            <i class="fa-brands fa-twitter px-2 text-[18px]"></i>
+                        </a>
+                        <a href="">
+                            <i class="fa-brands fa-instagram px-2 text-[18px]"></i>
+                        </a>
+                        <a href="">
+                            <i class="fa-regular fa-paper-plane px-2 text-[17px]"></i>
+                        </a>
+                        <a href="">
+                            <i class="fa-brands fa-google-play px-2 text-[17px]"></i>
+                        </a>
+                    </div>
+                    <div class="mx-3 relative">
+                        <span class="">
+                            <div id="open_search">
+                                <i class="fa-solid fa-magnifying-glass cursor-pointer text-base"  onclick="openSearchBox()"></i>
+                            </div>
+                            <div class="hidden" id="close_search">
+                                <i class="fa-regular fa-circle-xmark cursor-pointer text-base"  onclick="closeSearchBox()"></i>
+                            </div>
+                        </span>
+                        <div class="pt-3 absolute  left-0 top-4 hidden z-40" id="search_box">
+                            <form action="" class="flex items-center">
+                                <div class="flex  shadow-slate-500 shadow-md items-center px-4 py-4 w-64 bg-white">
+                                    <input type="text" name="" id="" placeholder="جستجو برای چیزی" class="outline-none focus:border-none w-full placeholder:font-bold">
+                                    <div>
+                                        <button>
+                                            <i class="fa-solid fa-magnifying-glass text-base"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <!-- Header in mobile and tablet mode -->
+    <header class=" visibility-reverse" >
+        <section class=" py-1.5 text-sm text-[#6c757d] p-4">
+            <div class="mycontainer flex justify-center items-center">
+                    <div class="px-1.5 flex w-1/3 justify-start">
+                        <a href="" class="hover:text-black">
+                            <i class="fa-brands fa-facebook responsive-P-1 responsive-text-1"></i>
+                        </a>
+                        <a href="" class="hover:text-black">
+                            <i class="fa-brands fa-twitter responsive-P-1 responsive-text-2"></i>
+                        </a>
+                        <a href="" class="hover:text-black">
+                            <i class="fa-brands fa-instagram responsive-P-1 responsive-text-2"></i>
+                        </a>
+                        <a href="" class="hover:text-black">
+                            <i class="fa-regular fa-paper-plane responsive-P-1 responsive-text-3"></i>
+                        </a>
+                        <a href="" class="hover:text-black">
+                            <i class="fa-brands fa-google-play responsive-P-1 responsive-text-3"></i>
+                        </a>
+                    </div>
+                    <div class="mx-3 relative w-1/3 flex justify-center">
+                        <span class="">
+                            <div id="open_search">
+                                <i class="fa-solid fa-magnifying-glass cursor-pointer responsive-text-1"  onclick="openSearchBox()"></i>
+                            </div>
+                            <div class="hidden" id="close_search">
+                                <i class="fa-regular fa-circle-xmark cursor-pointer responsive-text-1"  onclick="closeSearchBox()"></i>
+                            </div>
+                        </span>
+                        <div class="pt-3 absolute  left-0 top-4 hidden z-40" id="search_box">
+                            <form action="" class="flex items-center">
+                                <div class="flex  shadow-slate-500 shadow-md items-center px-4 py-4 w-64 bg-white">
+                                    <input type="text" name="" id="" placeholder="جستجو برای چیزی" class="outline-none focus:border-none w-full placeholder:font-bold">
+                                    <div>
+                                        <button>
+                                            <i class="fa-solid fa-magnifying-glass text-base"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="w-1/3 flex justify-end">
+                        <div class="bg-[#f63e02] border-[#f63e02] rounded-sm flex items-center pt-[0.3rem] pb-[0.2rem] px-4 z-0">
+                            <a href="" class="responsive-card-flex text-center items-center pb-1">                
+                                <span class="text-white text-xs text-center responsive-card-flex font-extrabold">دانلود اپلیکیشن</span>
+                                <i class="fa-solid fa-cloud-arrow-down text-white responsive-text-1 mr-1"></i>
+                            </a>
+                        </div>
+                    </div> 
+            </div>
+        </section>
+    </header>
+    <!-- Navbar in mobile and tablet mode -->
+    <nav class="sticky shadow-md visibility-reverse opacity-95 top-0 z-30 border-b border-[#e9ecef] bg-white">
+        <section class=" py-1.5 text-sm px-4 text-[#6c757d] pb-8 pt-4 ">
+            <div class="flex">
+                <div class="w-1/2 flex justify-start items-center" id="menu_mobile">
+                    <i class="fa-solid fa-bars responsive-text-4 cursor-pointer"  onclick="menuMobile()"></i>
+                </div>
+                <div class="w-1/2 flex justify-start items-center hidden" id="close_menuMobile">
+                    <i class="fa-solid fa-xmark responsive-text-4 cursor-pointer" onclick="menuMobileClose()" ></i>
+                </div>
+                <div class="flex items-center justify-end mx-1 w-1/2">
+                    <a href="" class="flex items-center justify-center align-middle pt-1">
+                        <img src="./img/myelin-logo-website-new.png" alt="میلین"  width="54.090" class="align-middle responsive-width-6">
+                    </a>
+                </div>
+               
+            </div>
+            <div class="hidden" id="submenu_mobile">
+                <div class="h-li-mobile">
+                    <a href="" class="" >                                   
+                        <span class="hover:text-black" id="home">
+                            <i class="fa-solid fa-house-laptop"></i>
+                            خانه
+                        </span>
+                    </a>
+                </div>
+                <div class="h-li-mobile">
+                    <a  class="cursor-pointer">                                   
+                        <span class="hover:text-black hidden" id="close_submenuMobile" onclick="submenuClose_mobile()">
+                            <i class="fa-solid fa-bars"></i>
+                            میلین
+                            <div class=" inline-block mr-0.5"  >
+                                <i class="fa-solid fa-angle-up hidden" ></i>
+                            </div>
+                        </span>
+                        <span class="hover:text-black" id="open_submenuMobile" onclick="submenu_mobile()">
+                            <i class="fa-solid fa-bars"></i>
+                            میلین
+                            <div class="inline-block mr-0.5" >
+                                <i class="fa-solid fa-angle-down" ></i>
+                            </div> 
+                        </span>
+
+                    </a>
+                    <div class="pt-2 w-full z-40 hidden" id="sub_submenu">
+                        <div class=" mycontainer">
+                            <div class=" bg-white h-fit pr-2  rounded-md">
+                                <div class="w-full  flex-col ">
+                                    <div class="flex justify-  my-1.5">
+                                        <h6 class="text-sm text-black">مدیریت</h6>
+                                    </div>
+                                    <div class="flex justify-start py-2 my-1.5 pr-2 hover:bg-slate-100 hover:rounded-md ">
+                                        <a href="" >
+                                            <span class="h-submenu-span hover:text-black">
+                                                <i class="fa-solid fa-circle-user text-base ml-2 "></i>
+                                                پیام مدیریت
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="flex justify-start my-1.5 h-li-mobile text-sm">
+                                        <h6 class="text-black">درباره میلین</h6>
+                                    </div>
+                                    <div class="py-2 pr-2 my-1.5  hover:bg-slate-100 hover:rounded-md">
+                                        <a href="">
+                                            <span class="h-submenu-span flex ml-2 hover:text-black">
+                                                <i class="fa-regular fa-user ml-2 text-base hover:text-black"></i>
+                                                درباره ما
+                                                <span>
+                                                    <span class="bg-[#fba57326] mx-2 px-1 pb-1 text-xs rounded-sm">
+                                                        <span class="text-[#fa8743]">جدید</span>
+                                                    </span>
+                                                </span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="w-full ">
+                                    <div class="flex my-1.5 justify-start text-sm">
+                                        <h6 class="text-black">لینک های مفید</h6>
+                                    </div>
+                                    <div class="py-2 pr-2 my-1.5 hover:bg-slate-100 hover:rounded-md">
+                                        <a href="">
+                                            <span class="h-submenu-span flex hover:text-black">
+                                                <i class="fa-regular fa-circle-question ml-2 text-base"></i>
+                                                سوالات متداول
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="w-full my-3">
+                                    <div class="flex align-middle ">
+                                        <div class="align-middle w-5/6 h-28 rounded-md pr-3 flex items-center" style="
+                                            background-image:url(./img/menu-banner-image.jpg);
+                                            background-position: center;
+                                            background-size: 100%;
+                                            background-repeat: no-repeat;">      
+                                            <a href="" class=" ">
+                                                <span class="flex justify-start m-0 text-white text-lg font-bold ">میلین!</span>
+                                                <span class=" flex  pr-2 text-gray-200 mb-1">به جامعه برزگ ما بپیوندید!</span>
+                                                <span class=" text-xs font-bold text-white flex justify-start">
+                                                    ثبت نام
+                                                    <i class="fa-solid fa-angle-left  mr-1 pt-0.5 "></i>
+
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                <div class="h-li-mobile">
+                    <a href="" class="">                                   
+                        <span class="hover:text-black">
+                            <i class="fa-solid fa-medal"></i>
+                            ویژگی های میلین
+                        </span>
+                    </a>
+                </div>
+                <div class="h-li-mobile">
+                    <a href="" class="">                                   
+                        <span class="hover:text-black">
+                            <i class="fa-regular fa-window-maximize"></i>
+                            وبلاگ
+                        </span>
+                    </a>
+                </div>
+                <div class="h-li-mobile">
+                    <a href="" class="">                                   
+                        <span class="hover:text-black">
+                            <i class="fa-regular fa-envelope"></i>
+                            تماس با ما
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </nav>
+    <!-- Navbar in desktop mode -->
+    <nav class="sticky top-0 z-30  visibility">
+        <section class="border-b-2  border-slate-300 py-3 text-sm font-bold opacity-95 bg-white relative z-40   flex justify-center w-full ">
+            <div class="flex mycontainer ">
+                <nav class="flex text-center justify-center">
+                    <div class="flex-col items-center justify-center mx-1">
+
+                            <a href="" class="flex items-center justify-center align-middle pt-1">
+                                <img src="./img/myelin-logo-website-new.png" alt="میلین"  width="54.090" class="align-middle">
+                            </a>
+                    </div>
+                    <div class="flex mr-6 mx-2 items-center">
+                        <div class=" bg-slate-300 w-[0.5px] h-7" ><br></div>
+                    </div>
+                    <div class="justify-start flex">
+                        <ul class="flex ">
+                            <li class="h-li ">
+                                <a href="" class="ml-1 py-2 border-b-4 border-[#f63e02]" >                                   
+                                    <span class="" id="home">
+                                        <i class="fa-solid fa-house-laptop"></i>
+                                        خانه
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="h-li" onmouseover="submenu()" onmouseout="submenuClose()">
+                                <a href="" class="h-li-a">                                   
+                                    <span>
+                                        <i class="fa-solid fa-bars"></i>
+                                        میلین
+                                        <div class="hidden inline-block mr-0.5" id="close_submenu">
+                                            <i class="fa-solid fa-angle-up hidden" ></i>
+                                        </div>
+                                        <div class="inline-block mr-0.5" id="open_submenu">
+                                            <i class="fa-solid fa-angle-down" ></i>
+                                        </div>
+                                        
+                                    </span>
+    
+                                </a>
+                                <div class="absolute top-12 left-0  w-full hidden z-40 " id="submenu">
+                                    <div class="pt-6 pr-4 mycontainer">
+                                        <div class="flex bg-white h-fit  shadow-md rounded-md">
+                                            <div class="w-1/3 border-l border-slate-300 flex-col p-3">
+                                                <div class="flex justify-start py-3 px-5">
+                                                    <h6 class="text-sm">مدیریت</h6>
+                                                </div>
+                                                <div class="flex justify-start py-2 px-5 hover:bg-slate-100 hover:rounded-md ">
+                                                    <a href="" >
+                                                        <span class="h-submenu-span  hover:text-black">
+                                                            <i class="fa-solid fa-circle-user text-base ml-2 "></i>
+                                                            پیام مدیریت
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                                <div class="flex justify-start py-2 px-5 text-sm">
+                                                    <h6 class="">درباره میلین</h6>
+                                                </div>
+                                                <div class="py-2 px-5 hover:bg-slate-100 hover:rounded-md">
+                                                    <a href="">
+                                                        <span class="h-submenu-span flex ml-2 hover:text-black">
+                                                            <i class="fa-regular fa-user ml-2 text-base hover:text-black"></i>
+                                                            درباره ما
+                                                            <span>
+                                                                <span class="bg-[#fba57326] mx-2 px-1 pb-1 text-xs rounded-sm">
+                                                                    <span class="text-[#fa8743]">جدید</span>
+                                                                </span>
+                                                            </span>
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="w-1/3 p-3">
+                                                <div class="flex justify-start py-2 px-5 text-sm">
+                                                    <h6>لینک های مفید</h6>
+                                                </div>
+                                                <div class="py-2 px-5 hover:bg-slate-100 hover:rounded-md">
+                                                    <a href="">
+                                                        <span class="h-submenu-span flex hover:text-black">
+                                                            <i class="fa-regular fa-circle-question ml-2 text-base"></i>
+                                                            سوالات متداول
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="w-1/3">
+                                                <div class="relative flex align-middle py-3  pl-3">
+                                                    <div class="align-middle">
+                                                        <img src="./img/menu-banner-image.jpg" alt="" class="w-72 h-36 rounded-md absolute align-middle"  >
+                                                        <a href="" class="absolute right-6 top-14">
+                                                            <h6 class="flex justify-start text-white text-lg font-bold my-1">میلین!</h6>
+                                                            <span class="h-submenu-span flex my-1 pr-2 text-gray-300">به جامعه برزگ ما بپیوندید!</span>
+                                                            <span class="h-submenu-span text-xs font-bold text-white flex justify-start">
+                                                                ثبت نام
+                                                                <i class="fa-solid fa-angle-left  mr-2 pt-1 "></i>
+    
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                                   
+                            </li>
+                            <li class="h-li">
+                                <a href="" class="h-li-a">                                   
+                                    <span>
+                                        <i class="fa-solid fa-medal"></i>
+                                        ویژگی های میلین
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="h-li">
+                                <a href="" class="h-li-a">                                   
+                                    <span>
+                                        <i class="fa-regular fa-window-maximize"></i>
+                                        وبلاگ
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="h-li">
+                                <a href="" class="h-li-a">                                   
+                                    <span>
+                                        <i class="fa-regular fa-envelope"></i>
+                                        تماس با ما
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bg-[#f8f9fa] border-[#f8f9fa] rounded-3xl flex items-center py-[0.6rem] px-5 mr-6 hover:bg-[#dfe0e0] z-0">
+                        <a href="" class="flex items-center">                          
+                            <span class="text-sm">info@myeline.com</span>
+                            <i class="fa-regular fa-envelope mr-2 text-sm"></i>
+                        </a>
+                    </div>
+                    <span class="mx-2 z-0"></span>
+                    <div class="bg-[#f63e02] border-[#f63e02] rounded-3xl flex items-center pt-[0.6rem] pb-[0.5rem] px-5 z-0">
+                        <a href="" class="flex items-center pb-1">
+                            <i class="fa-solid fa-mobile-screen-button text-white text-sm ml-1"></i>
+                            <span class="text-white text-base font-extrabold">دانلود اپلیکیشن</span>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </section>
+    </nav>
+    <main class="pt-10  bg-[#f8f9fa] responsive-main">
+        <section class=" pt-10">
+            <div class="responsive-card-flex mycontainer">
+                <div class="responsive-width z-0 p-3">
+                    <div class="flex items-center ">
+                        <div class="rounded-3xl bg-white drop-shadow-md px-2 pt-0.5 pb-1 mb-2">
+                            <a class="responsive-text-6 font-semibold  " > 
+                            ساز زندگی، آهنگ زندگی تو بساز</a>
+                        </div>
+                        <div class="pb-2">
+                            <i class="fa-solid fa-star text-amber-400 mr-1 responsive-text-4"></i>
+                        </div>
+                        <div class="pb-2">
+                            <i class="fa-solid fa-star text-amber-400 responsive-text-4"></i>
+                        </div>
+                        <div class="pb-2">
+                            <i class="fa-solid fa-star text-amber-400 responsive-text-4"></i>
+                        </div>
+                        <div class="pb-2">
+                            <i class="fa-solid fa-star text-amber-400 responsive-text-4"></i>
+                        </div>
+                        <div class="pb-2">
+                            <i class="fa-solid fa-star text-amber-400 responsive-text-4"></i>
+                        </div>                      
+                    </div>
+                    <div class="pt-5">
+                        <h6 class="  rsponsibleWords">
+                            <span>میلین</span>
+                            <span id="words">
+                                <span id="word1" class="">آرامش</span>
+                                <span id="word2" class="hidden"> آگاهی</span>
+                                <span id="word3" class="hidden">سلامتی</span>
+                            </span>
+                            <span>زندگی</span>
+                        </h6>
+                    </div>
+                    <div class="py-8">
+                        <span class="text-gray text-lg font-medium" class="test" >
+                            با میلین از تمام جزئیات ابعاد مختلف زندگی
+                             و راهکارهایی که در جهان برای زندگی بهتر با 
+                             MS ارائه میشه باخبر میشید.
+                        </span>
+                    </div>
+                    <div class="responsive-flex-3 justify-center">
+                        <div class="flex h-16   responsive-1 responsive-justify" id="img_smalls" onmouseover="change()" onmouseout="returnChange()">
+                            <div class=" flex relative responsive responsive-justify" id="width_img">
+                                <a href="" class="px-0.5 title" data-title="برای مبتلایان MS" class="titleStyle">
+                                    <img src="./img/mainPageIcon03.jpg" alt="" class="img-small z-0 left-14 absolute" id="img_small1">
+                                    <div>
+
+                                    </div>
+                                </a>
+                                <a href="" class="px-0.5 title" data-title=" برای همراهان مبتلایان MS" class="titleStyle">
+                                    <img src="./img/mainPageIcon02.jpg" alt="" class="img-small z-10 left-8 absolute" id="img_small2">
+                                </a>
+                                <a href="" class="px-0.5 title" data-title="برای همه"  class="titleStyle">
+                                    <img src="./img/mainPageIcon01.jpg" alt="" class="img-small z-20 left-1 absolute" id="img_small3">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="responsive-2 responsive-justify-2 flex">
+                            <button class="bg-[#f63e02] border-[#f63e02] rounded-3xl flex items-center py-[0.8rem] px-5  text-white font-bold hover:bg-[#e63a01] hover:pr-8">
+                                <span class="pb-0.5">
+                                    <i class="fa-solid fa-suitcase text-white ml-2"></i>
+                                    خدمات میلین 
+                                </span>
+                                
+                            </button>
+                        </div>
+                    </div>
+                    <div class="responsive-card-flex hover:opacity-90 mt-5">
+                        <div class="flex  justify-around">
+                            <div class="py-5">
+                                <img src="./img/msinternationallogo.svg" alt=""  class="img-small-b pt-2 responsive-3">
+                            </div>
+                            <div class="py-5">
+                                <img src="./img/high-audio-min.png" alt="" class="img-small-b responsive-3">
+                            </div>
+                        </div>
+                        <div class="flex justify-around">
+                            <div class="py-5">
+                                <img src="./img/fullhd-min.png" alt=""  class="img-small-b responsive-3">
+                            </div>
+                            <div class="py-5">
+                                <img src="img/stripe.png" alt=""  class="img-small-b responsive-3">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="responsive-width responsive-H text-center flex justify-center z-0 h-92">
+                    <div class="relative text-center responsive-img-width">
+                        <img src="./img/intro-image-02-min.png" alt="" class="absolute  z-10  top-28 responsive-img-1" >
+                        <img src="img/intro-image-01-min.png" alt="" class="absolute  z-20  responsive-img-2">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class=" responsive-MT mb-5 ">
+            <div class="  mycontainer ">
+                <div class="bg-white rounded-lg pt-4 pb-5 responsive-flex-3 text-center justify-between h-fit responsive-M-4 p-5">
+                    <div class="text-base responsive-flex-3 font-bold ">
+                        <i class="fa-solid fa-mobile text-[#f63e02] responsive-text-7 ml-2 responsive-M-3"></i>
+                        <div class="text-gray-500 responsive-text-8 flex justify-center ">
+                            <span class="text-right">
+                                اپلیکیشن میلین برای ثبت لحظات زندگی شما
+                            </span>
+                        </div>
+                    </div>
+                    <div class=" responsive-text-8 font-bold text-[#f63e02] ">
+                      
+                            <span class="cursor-pointer ">دانلود اپلیکیشن</span>                  
+                        <i class="fa-solid fa-angle-left  text-xs text-[#f63e02] mr-1 pt-2"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- This section is in deskop mode -->
+        <section class="visibility">
+            <div class="mycontainer flex ">
+               <div class="w-1/2 flex">
+                    <div class="rounded-lg bg-white w-1/2 py-10 px-8 ml-4">
+                        <div class="pb-6">
+                            <i class="fa-solid fa-folder-plus text-[#f63e02] text-5xl"></i>
+                        </div>
+                        <div>
+                            <h2 class="text-3xl font-bold mb-5">پرونده سلامت</h2>
+                            <span class="text-gray text-lg">
+                                تاریخچه‌ی درمان خود را هر لحظه و هرجا در موبایل خود همراه داشته باشید.
+                            </span>
+                        </div>
+                        <div class=" pt-5 pr-2">
+                            <button class="rounded-3xl border-[2px] border-gray-200 pt-1 pb-2 px-4 font-bold">
+                                <i class="fa-regular fa-circle-question ml-1"></i>
+                                بیشتر بدانید
+                            </button>
+                        </div>
+                    </div>
+                    <div class="rounded-lg bg-white w-1/2 py-10 px-8 ml-4">
+                        <div class="pb-6">
+                            <i class="fa-solid fa-clock text-[#f63e02] text-5xl"></i>
+                        </div>
+                        <div>
+                            <h2 class="text-3xl font-bold mb-5">یادآور همراه</h2>
+                            <span class="text-gray text-lg">
+                                نگران زمان مصـرف دارو و مراجعه به پزشک نخواهید بود.
+                            </span>
+                        </div>
+                        <div class=" pt-5 pr-2">
+                            <button class="rounded-3xl border-[2px] border-gray-200 pt-1 pb-2 px-4 font-bold">
+                                <i class="fa-solid fa-circle-plus ml-1"></i>
+                                ثبت یادآور
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-1/2 flex">
+                    <div class="rounded-lg bg-white w-1/2 py-10 px-8 ml-4">
+                        <div class="pb-6">
+                            <i class="fa-regular fa-comments text-[#f63e02] text-5xl"></i>
+                        </div>
+                        <div>
+                            <h2 class="text-3xl font-bold mb-5">گپ و گفت</h2>
+                            <span class="text-gray text-lg">
+                                دوستانی با شرایط مشابه خودتان پیدا کنید و گروه دوستانه تشکیل دهید.                        </span>
+                        </div>
+                        <div class=" pt-5 pr-2">
+                            <button class="rounded-3xl border-[2px] border-gray-200 pt-1 pb-2 px-4 font-bold">
+                                <i class="fa-solid fa-user-group ml-1"></i>
+                                ایجاد گروه
+                            </button>
+                        </div>
+                    </div>
+                    <div class="rounded-lg bg-white w-1/2 py-10 px-8">
+                        <div class="pb-6">
+                            <i class="fa-solid fa-person-walking  text-[#f63e02] text-5xl"></i>
+                        </div>
+                        <div>
+                            <h2 class="text-3xl font-bold mb-5">یوگا+مدیتیشن</h2>
+                            <span class="text-gray text-lg ">
+                                با بهترین مربی‌های جهان، یوگا تمرین کنید و با مدیتیشن به آرامش برسید.                        </span>
+                        </div>
+                        <div class=" pt-5 pr-2">
+                            <button class="rounded-3xl border-[2px] border-gray-200 pt-1 pb-2 px-4 font-bold">
+                                <i class="fa-regular fa-flag ml-1"></i>
+                                شروع تمرین
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- This section is in mobile and tablet mode -->
+        <section class="visibility-reverse">
+            <div class="mycontainer flex-col ">
+               <div class=" responsive-flex-3 responsive-P-3">
+                    <div class="rounded-lg bg-white responsive-width-7 py-10 px-8 ml-4 responsive-M-2">
+                        <div class="pb-6">
+                            <i class="fa-solid fa-folder-plus text-[#f63e02] text-5xl"></i>
+                        </div>
+                        <div>
+                            <h2 class="text-3xl font-bold mb-5">پرونده سلامت</h2>
+                            <span class="text-gray text-lg ">
+                                تاریخچه‌ی درمان خود را هر لحظه و هرجا در موبایل خود همراه داشته باشید.
+                            </span>
+                        </div>
+                        <div class=" pt-5 pr-2">
+                            <button class="rounded-3xl border-[2px] border-gray-200 pt-1 pb-2 px-4 font-bold">
+                                <i class="fa-regular fa-circle-question ml-1"></i>
+                                بیشتر بدانید
+                            </button>
+                        </div>
+                    </div>
+                    <div class="rounded-lg bg-white responsive-width-7 py-10 px-8 responsive-M-2">
+                        <div class="pb-6">
+                            <i class="fa-solid fa-clock text-[#f63e02] text-5xl"></i>
+                        </div>
+                        <div>
+                            <h2 class="text-3xl font-bold mb-5">یادآور همراه</h2>
+                            <span class="text-gray text-lg">
+                                نگران زمان مصـرف دارو و مراجعه به پزشک نخواهید بود.
+                            </span>
+                        </div>
+                        <div class=" pt-5 pr-2">
+                            <button class="rounded-3xl border-[2px] border-gray-200 pt-1 pb-2 px-4 font-bold">
+                                <i class="fa-solid fa-circle-plus ml-1"></i>
+                                ثبت یادآور
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="responsive-flex-3 ">
+                    <div class="rounded-lg bg-white responsive-width-7 py-10 px-8 ml-4 responsive-M-2">
+                        <div class="pb-6">
+                            <i class="fa-regular fa-comments text-[#f63e02] text-5xl"></i>
+                        </div>
+                        <div>
+                            <h2 class="text-3xl font-bold mb-5">گپ و گفت</h2>
+                            <span class="text-gray text-lg">
+                                دوستانی با شرایط مشابه خودتان پیدا کنید و گروه دوستانه تشکیل دهید.                        </span>
+                        </div>
+                        <div class=" pt-5 pr-2 ">
+                            <button class="rounded-3xl border-[2px] border-gray-200 pt-1 pb-2 px-4 font-bold">
+                                <i class="fa-solid fa-user-group ml-1"></i>
+                                ایجاد گروه
+                            </button>
+                        </div>
+                    </div>
+                    <div class="rounded-lg bg-white responsive-width-7 py-10 px-8 responsive-M-2">
+                        <div class="pb-6">
+                            <i class="fa-solid fa-person-walking  text-[#f63e02] text-5xl"></i>
+                        </div>
+                        <div>
+                            <h2 class="text-3xl font-bold mb-5">یوگا+مدیتیشن</h2>
+                            <span class="text-gray text-lg">
+                                با بهترین مربی‌های جهان، یوگا تمرین کنید و با مدیتیشن به آرامش برسید.                        </span>
+                        </div>
+                        <div class=" pt-5 pr-2 text-center">
+                            <button class="rounded-3xl border-[2px] border-gray-200 pt-1 pb-2 px-4 font-bold">
+                                <i class="fa-regular fa-flag ml-1"></i>
+                                شروع تمرین
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="pt-16">
+            <div class="mycontainer py-10 flex-col justify-center items-center text-center responsive-width-9">
+                <div class="flex justify-center">
+                    <div class="bg-[#fba57326] rounded-2xl pb-1  w-44 text-center">
+                        <span class="text-[#fa8743] text-sm font-semibold">یوگا | مدیتیشن | اخبار MS</span>
+                    </div>
+                </div>
+                <div class=" flex justify-center my-2">
+                    <h1 class="responsive-text-9 font-bold">آموزش دانلود و نصب اپلیکیشن</h1>
+                </div>
+                <div class="flex justify-center mt-6">
+                    <span class="text-gray">
+                        راهنمای دانلود و آموزش نصب اپلیکیشن،
+                         در صورت بروز مشکل با پشتیبانی آنلاین 
+                        ما رایگان تماس بگیرید.
+                    </span>
+                </div>
+            </div>
+            <div class="responsive-card-flex mycontainer">
+                <div class="responsive-card-MP">
+                    <div class="responsive-card-width bg-white rounded-lg shadow-lg">
+                        <img src="./img/mainPageImage01.jpg" alt="" class="rounded-lg responsive-card-width-img">
+                        <div class="px-4 py-7">
+                            <div class="text-lg font-bold flex justify-between ">
+                                <span>
+                                    یوگا تخصصی برای مبتلایان MS
+                                </span>                                
+                                <i class="fa-solid fa-angle-left pt-2.5 text-xs mr-2"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="py-5 text-center">
+                        <div class="py-2">
+                            <span class="text-gray-lg">
+                                <i class="fa-solid fa-ice-cream text-xl text-[#fe6f1c] ml-2"></i>
+                                امکان انجام با هر شرایط جسمی
+                            </span>
+                        </div>
+                        <div class="py-2">
+                            <span class="text-gray-lg">
+                                <i class="fa-solid fa-envelope-open text-xl text-[#fe6f1c] ml-2"></i>
+                                تمرین در منزل و محل کار
+                            </span>
+                        </div>
+                        <div class="py-2">
+                            <span class="text-gray-lg">
+                                <i class="fa-regular fa-star-half-stroke text-xl text-[#fe6f1c] "></i>
+                                تمرین با بهترین اساتید
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="responsive-card-MP">
+                    <div class="responsive-card-width bg-white rounded-lg shadow-lg">
+                        <img src="./img/mainPageImage02.jpg" alt="" class="rounded-lg responsive-card-width-img">
+                        <div class="px-4 py-7">
+                            <div class="text-lg font-bold flex justify-between">
+                                <span>
+                                    پاسخ متخصصین MS به سوالات رایج
+                                </span>                               
+                                <i class="fa-solid fa-angle-left pt-2.5 text-xs mr-2"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="py-5 text-center">
+                        <div class="py-2">
+                            <span class="text-gray-lg">
+                                <i class="fa-solid fa-circle-exclamation text-xl text-[#fe6f1c] ml-2"></i>
+                                متخصصین مغز و اعصاب
+                            </span>
+                        </div>
+                        <div class="py-2">
+                            <span class="text-gray-lg">
+                                <i class="fa-solid fa-face-frown text-xl text-[#fe6f1c] ml-2"></i>
+                                متخصصین اعصاب و روان
+                            </span>
+                        </div>
+                        <div class="py-2">
+                            <span class="text-gray-lg">
+                                <i class="fa-solid fa-user-tie text-xl text-[#fe6f1c] ml-2"></i>
+                                طب فیزیکی و کاردرمانی
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-3 ">
+                    <div class="flex justify-center">
+                        <div class="bg-[#fe876026] pb-1 px-2 rounded-md">
+                            <span class="text-[#f63e02] text-sm font-black ">میلین، ساز زندگی تو</span>
+                        </div>
+                    </div>
+                    <div class="flex justify-center text-center pt-3 responsive-card-text">
+                        <h3 class=" font-bold leading-snug">برای داشتن زندگی شادتر، میلین در کنار شماست!</h3>
+                    </div>
+                    <div class="flex justify-center text-center py-4 text-gray">
+                        <span class="">برای داشتن زندگی شاد تر، میلین در کنار شماست.</span>
+                    </div>
+                    <div class="flex justify-center text-center pt-5">
+                        <button class="btn w-full pt-2 pb-3 text-xl text-center font-black">
+                            خدمات ویژه
+                        </button>
+                    </div>
+                    <div class="flex justify-center text-center pt-5">
+                        <a href="">
+                            <span class="w-full py-5 text-gray-lg text-center font-black hover:text-gray-600">
+                                ویدیو معرفی
+                            </span>
+                            
+                        </a>
+                    </div>
+                    <div class="flex justify-center text-center pt-5">
+                        <a href="">
+                            <span class=" w-full pb-2 pt-3 text-gray-lg text-center font-black hover:text-gray-600">
+                                محصول با کیفیت
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="responsive-bg py-10">
+            <div class="mycontainer responsive-card-flex">
+                <div class="responsive-width border-dashed border-2 border-[#E9ECEF] rounded-md p-10 ml-4">
+                    <div class="sticky top-20 z-20">
+                        <div class="flex justify-center ">
+                            <div class="bg-[#fe876026] pb-1 px-2 rounded-xl">
+                                <span class="text-[#f63e02] text-base font-black ">جذاب‌های میلین</span>
+                            </div>
+                        </div>
+                        <div class="flex justify-center text-center pt-3">
+                            <h3 class="responsive-text-9 font-bold leading-snug">برگزاری دوره‌های آموزشی تخصصی MS</h3>
+                        </div>
+                        <div class="flex justify-center text-center py-4 text-gray">
+                            <span class="">
+                                دوره‌های تخصصی میلین با حداقل هزینه و حداکثر
+                                 کیفیت در دوره‌های زمانی متفاوت برگزار می‌شوند.
+                            </span>
+                        </div>
+                        <div class="py-3 text-center">
+                            <div class="py-2">
+                                <span class="text-gray-lg">
+                                    <i class="fa-solid fa-horse text-xl text-[#fe6f1c] ml-2"></i>
+                                    اسب درمانی
+                                </span>
+                            </div>
+                            <div class="py-2">
+                                <span class="text-gray-lg">
+                                    <i class="fa-brands fa-artstation text-xl text-[#fe6f1c] ml-2"></i>
+                                    هنر درمانی
+                                </span>
+                            </div>
+                            <div class="py-2">
+                                <span class="text-gray-lg">
+                                    <i class="fa-brands fa-gitlab text-xl text-[#fe6f1c] ml-2"></i>
+                                    کار درمانی
+                                </span>
+                            </div>
+                        </div>
+                        <div class="flex justify-center py-5">
+                            <button class="bg-[#fba57326] rounded-3xl text-center w-full hover:bg-[#faac7f] pt-1.5 pb-2.5 ">
+                                <span class="text-[#fa8743] text-sm font-semibold hover:text-[#fe6f1c]">
+                                    <i></i>
+                                    آشنایی با خدمات ما
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="responsive-width ">
+                    <div class=" bg-white rounded-lg shadow-xl">
+                        <img src="./img/mainPageImage04.jpg" alt="" class="rounded-lg  h-72 w-full">
+                        <div class="px-5 py-7 flex justify-between">
+                            <div class="text-lg font-bold flex justify-between w-full">
+                                <span>
+                                    رویداد اسب درمانی
+                                </span>                                
+                                <i class="fa-solid fa-angle-left pt-2 text-xs"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-[#fcfdfd] my-4 rounded-lg border-dashed border-2 border-[#E9ECEF] rounded-lg p-7">
+                        <div class="responsive-flex-3 text-center">
+                            <div class="ml-4 flex justify-center items-start responsive-M-3">
+                                <div class="rounded-full responsive-width-8 h-fit bg-[#f8f1ed] text-center p-2">
+                                    <i class="fa-solid fa-medal text-[#fa8743] text-4xl responsive-text-10"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <h6 class="text-xl font-bold">
+                                        ۲۰ درصد تخفیف در دوره‌های آموزشی میلین
+                                    </h6>
+                                </div>
+                                <div>
+                                    <span>
+                                        با ثبت شماره تماس یا ایمیل خود، این تخفیف را دریافت کنید.
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pt-2">
+                            <button class=" rounded-3xl pb-1 text-[#fa8743]  w-44 text-center w-full hover:bg-[#fe8760] hover:text-white pt-1.5 pb-2.5 font-bold text-sm ">
+                                
+                                    <i></i>
+                                    ثبت شماره موبایل یا ایمیل
+                                
+                            </button>
+                        </div>
+                    </div>
+                    <div class="bg-white  shadow-xl rounded-lg mb-4">
+                        <img src="./img/mainPageImage05.jpg" alt="" class="rounded-lg h-72 w-full">
+                        <div class="px-5 py-7 rounded-lg flex justify-between ">
+                            <div class="text-lg font-bold flex justify-between w-full">
+                                <span>
+                                    دوره های هنر درمانی
+                                </span>
+                                
+                                <i class="fa-solid fa-angle-left pt-2 text-xs"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div  class="w-full flex h-44  justify-center items-center"
+                    >
+                        <div class="div-rotate">
+                            <h1 class="text-large" 
+                            >
+                                سلامتی.
+                            </h1>
+                        </div>
+                        
+                         <div class="div-rotate">
+                            <h1 class="text-large"
+                            >
+                                آرامش.
+                            </h1>
+                        </div>
+                        <div class="div-rotate">
+                            <h1 class="text-large"
+                            >
+                                آگاهی.
+                            </h1>
+                        </div>   
+                        <div class="div-rotate">
+                            <h1 class="text-large"
+                            >
+                                نظم!*
+                            </h1>
+                        </div>        
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="py-5">
+            <div class="mycontainer">
+                <div class="text-center">
+                    <div>
+                        <h6 class="text-2xl font-bold">
+                            نظر کاربران درباره میلین
+                        </h6>
+                    </div>
+                    <div class="pt-3">
+                        <span class="text-gray">
+                            تجربه و نظر کاربران میلین، پس از استفاده از محصولات و خدمات میلین
+                        </span>
+                    </div>
+                    <div class=" pt-5">
+                        <button class="rounded-3xl border-[2px] border-[#fe8760] pt-2 pb-3 px-4 text-[#fe8760] hover:bg-[#fe8760] hover:text-white font-bold text-sm">
+                            <i class="fa-solid fa-angle-left pt-1 text-xs ml-1"></i>
+                           بررسی سرویس ها
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-10">
+            <div>
+                <div class="mycontainer responsive-card-flex items-center">
+                    <div class="responsive-width-2 ml-6 flex-col justify-center items-center h-72 pt-5">
+                        <div class="pt-2">
+                            <button class=" rounded-3xl  text-[#fa8743]  w-20 text-center  bg-[#f9f2ee]  pt-1.5 pb-2.5 font-bold text-xs ">
+                                
+                                    
+                                    امتیاز ۴.۹
+                                
+                            </button>
+                        </div>
+                        <div class="flex pt-3">
+                            <h3 class="text-4xl font-bold leading-snug ">برندهای با کیفیت و معتبر</h3>
+                        </div>
+                        <div class="pt-3">
+                            <span class="text-gray ">
+                                خدمات پیشرفته همراه با یک تجربه بزرگ و عملکرد سریع.
+                            </span>
+                        </div>
+                        <div class=" pt-5 pr-2 ">
+                            <button class="rounded-md  bg-white pt-3 pb-4 px-4 font-bold shadow-md">
+                                <i class="fa-solid fa-shield-halved ml-1"></i>
+                                مشاهده همه نظرات
+                            </button>
+                        </div>
+                        
+
+
+                    </div>
+                    <div class="responsive-width-3 responsive-card-flex">
+                        <div class="flex-col justify-center responsive-width ml-6 responsive-M ">
+                            <div class="bg-white rounded-md px-5 py-10 flex-col justify-center items-center text-center mb-6 shadow-md">
+                                <span class="text-gray-500 font-bold text-center">
+                                    ما به شما توصیه می‌کنیم نسخه نمایشی زنده تم 
+                                    را بررسی کنید تا گزینه‌ها و قابلیت‌های موجود را بررسی کنید.
+                                </span>
+                                <div class=" bg-[#fdf4e7] my-3 w-28 py-2 rounded-sm text-xs text-center mx-auto"  >
+                                    <i class="fa-solid fa-star text-amber-400"></i>
+                                    <i class="fa-solid fa-star text-amber-400"></i>
+                                    <i class="fa-solid fa-star text-amber-400"></i>
+                                    <i class="fa-solid fa-star text-amber-400"></i>
+                                    <i class="fa-solid fa-star text-gray-400"></i>
+                                </div>
+                                <h6 class="text-lg font-bold">
+                                    سارا حسینی
+                                </h6>
+                                <span class="text-[#f63e02]">
+                                    گوگل پلی
+                                </span>
+
+                            </div>
+                            <div class="bg-white rounded-md px-5 py-10 text-center shadow-md mb-6">
+                                <span class="text-gray-500 font-bold">
+                                    ما به شما توصیه می‌کنیم نسخه نمایشی زنده تم 
+                                    را بررسی کنید تا گزینه‌ها و قابلیت‌های موجود را بررسی کنید.
+                                </span>
+                                <div class=" bg-[#fdf4e7] my-3 w-28 py-2 rounded-sm text-xs text-center   mx-auto shadow-md"  >
+                                    <i class="fa-solid fa-star text-amber-400"></i>
+                                    <i class="fa-solid fa-star text-amber-400"></i>
+                                    <i class="fa-solid fa-star text-amber-400"></i>
+                                    <i class="fa-solid fa-star text-gray-400"></i>
+                                    <i class="fa-solid fa-star text-gray-400"></i>
+                                </div>
+                                <h6 class="text-lg font-bold">
+                                    سجاد یگانه
+                                </h6>
+                                <span class="text-[#f63e02]">
+                                    ایسنتاگرام
+                                </span>
+
+                            </div>
+                        </div>
+                        <div class="text-center flex-col justify-center items-center responsive-width">
+                            <div class="bg-white rounded-md px-5 py-10 flex-col justify-center items-center text-center mb-6 shadow-md">
+                                <span class="text-gray-500 font-bold">
+                                    ما به شما توصیه می‌کنیم نسخه نمایشی زنده تم 
+                                    را بررسی کنید تا گزینه‌ها و قابلیت‌های موجود را بررسی کنید.
+                                </span>
+                                <div class=" bg-[#fdf4e7] my-3 w-28 py-2 rounded-sm text-xs text-center mx-auto"  >
+                                    <i class="fa-solid fa-star text-amber-400"></i>
+                                    <i class="fa-solid fa-star text-amber-400"></i>
+                                    <i class="fa-solid fa-star text-amber-400"></i>
+                                    <i class="fa-solid fa-star text-amber-400"></i>
+                                    <i class="fa-solid fa-star text-amber-400"></i>
+                                </div>
+                                <h6 class="text-lg font-bold">
+                                    علی رضایی
+                                </h6>
+                                <span class="text-[#f63e02]">
+                                    گوگل پلی
+                                </span>
+
+                            </div>
+                            <div class="bg-white rounded-md px-5 py-10 flex-col items-center justify-center shadow-md">
+                                <span class="text-gray-500 font-bold">
+                                    ما به شما توصیه می‌کنم نسخه 
+                                    نمایشی زنده تم را بررسی کنید تا گزینه‌ها و قابلیت‌های موجود را بررسی کنید.
+                                </span>
+                                <div class=" bg-[#fdf4e7] my-3 w-28 py-2 rounded-sm text-xs text-center mx-auto"  >
+                                    <i class="fa-solid fa-star text-amber-400"></i>
+                                    <i class="fa-solid fa-star text-amber-400"></i>
+                                    <i class="fa-solid fa-star text-amber-400"></i>
+                                    <i class="fa-solid fa-star text-amber-400"></i>
+                                    <i class="fa-solid fa-star text-amber-400"></i>
+                                </div>
+                                <h6 class="text-lg font-bold">
+                                    مونا گنجی
+                                </h6>
+                                <span class="text-[#f63e02]">
+                                    بازار
+                                </span>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section class="pt-12 pb-4">
+            <div class="mycontainer responsive-card-flex">
+                <div class="responsive-width h-fit">
+                    <div class=" ml-6 flex-col justify-center items-center pt-5">
+                        <div class="flex ">
+                            <div class="bg-[#fe876026] pb-1 px-2 rounded-xl">
+                                <span class="text-[#f63e02] text-base font-black ">میزبان شما از سرار دنیا هستیم</span>
+                            </div>
+                        </div>
+                        <div class="flex   pt-3">
+                            <h3 class="text-4xl font-bold leading-snug ">اخبار بروز و علمی ام اس</h3>
+                        </div>
+                        <div class="pt-3">
+                            <span class="text-sm text-gray-600">
+                                میلین به صورت روزانه و کاملا تخصصی مطالب مرتبط با MS را برای شما همراهان عزیز آماده سازی می‌کند.
+                            </span>
+                        </div>
+                        <div class=" pt-5 pr-2 ">
+                            <button class="rounded-3xl border-[2px] border-gray-300 pt-2 pb-3 px-4 text-sm font-black">
+                                <i class="fa-regular fa-flag ml-1"></i>
+                                بررسی وبلاگ
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="responsive-width h-fit">
+                    <div class=" my-4 border-dashed border-2 border-[#E9ECEF] rounded-lg p-5">
+                        <div class="flex">
+                            <div class="w-1/6 ml-3 pt-2">
+                                <div class="rounded-full bg-[#f8f1ed] text-center p-2">
+                                    <i class="fa-solid fa-envelope-open-text text-[#fa8743] text-4xl"></i>
+                                </div>
+                                
+                            </div>
+                            <div>
+                                <div>
+                                    <h6 class="text-2xl font-bold pb-2">
+                                        عضویت در خبرنامه
+                                    </h6>
+                                </div>
+                                <div>
+                                    <span class="text-sm font-bold text-gray-500 ">
+                                        برای دریافت آخرین مطالب مرتبط با MS آدرس ایمیل خود را وارد نمایید.
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pt-4 responsive-flex justify-between">
+                            <input type="text" placeholder="آدرس ایمیل خود را وارد کنید" class="bg-white placeholder:text-base pt-3 pb-4 px-8 focus:outline-none text-gray rounded-md responsive-width-4">
+                            <button class=" rounded-md  bg-[#fa8743]  px-8 text-center text-white pt-3 pb-4 font-bold text-base responsive-MP">
+                                
+                                    <i></i>
+                                    عضویت
+                                
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section  class="responsive-bg pt-16 pb-10">
+            <div class="mycontainer responsive-card-flex">
+                <div class="responsive-width-5 responsive-M-2 rounded-md shadow-lg  ml-6 h-fit ">
+                    <a href="">
+                        <img src="./img/622x400 (4).jpg" alt="" class="w-full rounded-md">
+                    </a>
+                    <a href="">
+                        <div class="px-4 pt-4 pb-5 ">
+                            <div class="flex flex-wrap ">
+                                <div class="bg-[#fe876026]  px-0.5   rounded-md w-[5rem] text-center ml-1">
+                                    <span class="text-[#f63e02] text-xs font-black ">اخبار جدید ام اس</span>
+                                </div>
+                                <div class="bg-[#fe876026]  px-0.5  rounded-md w-[4rem] text-center">
+                                    <span class="text-[#f63e02] text-xs font-black ">ام اس چیست؟</span>
+                                </div>
+                                
+                                <div class="bg-[#fe876026] px-0.5  rounded-md w-[4rem] text-center mt-0.5">
+                                    <span class="text-[#f63e02] text-xs font-black ">علائم ام اس</span>
+                                </div>
+    
+                            </div>
+                            <h2 class="text-2xl font-bold pb-2 my-2">
+                                ایپید میلوژی و علت شناسی بیماری ام اس
+                            </h2>
+                            <div>
+                                <span class="text-xs text-gray-400">
+                                    <i class="fa-solid fa-clock text-gray-400 ml-1"></i>
+                                    29 خرداد 1402
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                    
+                </div>
+                <div class="responsive-width-5 responsive-M-2 rounded-md shadow-lg  ml-6 h-fit">
+                    <a href="">
+                        <img src="./img/622x400 (3).jpg" alt="" class="w-full rounded-md">
+                    </a>
+                    <a href="">
+                        <div class="px-4 pt-4 pb-5">
+                            <div class="flex-col flex-wrap ">
+                                <div class="bg-[#fe876026]  px-0.5   rounded-md w-[6rem] text-center ml-1">
+                                    <span class="text-[#f63e02] text-xs font-black ">سبک زندگی با ام اس</span>
+                                </div>
+                                <div class="bg-[#fe876026] px-0.5  rounded-md w-[4rem] text-center mt-0.5">
+                                    <span class="text-[#f63e02] text-xs font-black ">علائم ام اس</span>
+                                </div>
+    
+                            </div>
+                            <h2 class="text-2xl font-bold pb-2 my-2">
+                                بای باس معده، جراحی برای کاهش وزن، و ام اس
+                            </h2>
+                            <div>
+                                <span class="text-xs text-gray-400">
+                                    <i class="fa-solid fa-clock text-gray-400 ml-1"></i>
+                                    29 خرداد 1402
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                    
+                </div>
+                <div class="responsive-width-5 responsive-M-2 rounded-md shadow-lg  ml-6 h-fit">
+                    <a href="">
+                        <img src="./img/622x400 (2).jpg" alt="" class="w-full rounded-md">
+                    </a>
+                    <a href="">
+                        <div class="px-4 pt-4 pb-5">
+                            <div class="flex flex-wrap">
+                                <div class="bg-[#fe876026]  px-0.5   rounded-md w-[6.5rem] text-center ml-1">
+                                    <span class="text-[#f63e02] text-xs font-black ">روش های درمانی ام اس</span>
+                                </div>
+                            </div>
+                            <h2 class="text-2xl font-bold pb-2 my-2">
+                                تاثیر اخبار و حوادث منفی بر کودکان
+                            </h2>
+                            <div>
+                                <span class="text-xs text-gray-400">
+                                    <i class="fa-solid fa-clock text-gray-400 ml-1"></i>
+                                    29 خرداد 1402
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                    
+                </div>
+                <div class="responsive-width-5 rounded-md shadow-lg  h-fit">
+                    <a href="">
+                        <img src="./img/622x400.jpg" alt="" class="w-full rounded-md">
+                    </a>
+                    <a href="">
+                        <div class="px-4 pt-4 pb-5">
+                            <div class="flex-col flex-wrap">
+                                <div class="bg-[#fe876026]  px-0.5   rounded-md w-[6rem] text-center ml-1">
+                                    <span class="text-[#f63e02] text-xs font-black ">سبک زندگی باام اس</span>
+                                </div>
+                                <div class="bg-[#fe876026] px-0.5  rounded-md w-[4rem] text-center mt-0.5">
+                                    <span class="text-[#f63e02] text-xs font-black ">علائم ام اس</span>
+                                </div>
+    
+                            </div>
+                            <h2 class="text-2xl font-bold pb-2 my-2">
+                               ام اس چگونه می تواند بر سلامت دهان تاثیر بگذارد؟
+                            </h2>
+                            <div>
+                                <span class="text-xs text-gray-400">
+                                    <i class="fa-solid fa-clock text-gray-400 ml-1"></i>
+                                    29 خرداد 1402
+                                </span>
+                            </div>
+                        </div>
+                    </a>               
+                </div>
+            </div>          
+        </section>
+        
+    </main>
+    <footer class="responsive-bg responsive-footer">
+        <section class="pt-24 pb-10">
+            <div class="mycontainer responsive-card-flex">
+                <div class="footer-div-a ml-4 responsive-card-MP responsive-width-2" style="background-image: url(./img/footer-1.jpg); ">
+                    <a href="">
+                        <div class="footer-div-b">
+                            <span class="text-xl font-bold">
+                                تماس با میلین
+                            </span>
+                            <i class="fa-solid fa-angle-left pt-1 text-xs"></i>
+                        </div>
+                    </a>    
+                </div>
+                <div class="footer-div-a ml-4 responsive-card-MP responsive-width-2" style="background-image: url(./img/footer-2.jpg);">
+                    <a href="">
+                        <div class="footer-div-b">
+                            <span class="text-xl font-bold">
+                               مشاهده خدمات میلین 
+                            </span>
+                            <i class="fa-solid fa-angle-left pt-1 text-xs"></i>
+                        </div>
+                    </a>    
+                </div>
+                <div class="footer-div-a responsive-width-2" style="background-image: url(./img/footer-3.jpg);
+                background-position: right; 
+                background-size: 150%;">
+                    <a href="">
+                        <div class="footer-div-b">
+                            <span class="text-xl font-bold">
+                                بازدید از میلین
+                            </span>
+                            <i class="fa-solid fa-angle-left pt-1 text-xs"></i>
+                        </div>
+                    </a>    
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="mycontainer responsive-card-flex">
+                <div class="py-6 px-5 border-dashed border-2 border-[#E9ECEF] rounded-md responsive-width-2 responsive-card-MP">
+                    <div class="text-center flex justify-center mb-3">
+                        <img src="img/myelin-logo-dark-new.png" alt="" width="90" height="140">
+                    </div>              
+                    <span class="text-gray  block mb-4 leading-loose">
+                        اعتقاد و باور اعضای میلین این است که MS یکی از بیماری‌های ما در مسیر کشف 
+                        این حقیقت همراه شما خواهیم بود 
+                        و شما را تنها نخواهیم گذاشت.
+                    </span>
+                    <span class="text-[#f63e02] font-bold block mb-3">
+                        میلین در شبکه های اجتماعی
+                    </span>
+                    <div class="flex">
+                        <a href="">
+                            <i class="fa-brands fa-linkedin footer-icon-a"></i>
+                        </a>
+                        <a href="">
+                            <i class="fa-brands fa-twitter footer-icon-a"></i>
+                        </a>
+                        <a href="">
+                            <i class="fa-brands fa-instagram footer-icon-a"></i>
+                        </a>
+                        <a href="">
+                            <i class="fa-brands fa-telegram footer-icon-a"></i>
+                        </a>                       
+                    </div>
+                </div>
+                <div class="responsive-width-2 responsive-card-MP pr-2">
+                    <h6 class="text-lg font-bold mb-3">
+                        لینک‌های مفید
+                    </h6>
+                    <p class="text-gray leading-loose pb-4">
+                        اپلیکیشن میلین با هدف همراهی همیشگی شما در طول زندگی، ابعاد مختلفی
+                         از سبک زندگی را تحت پوشش قرار داده است.
+                    </p>
+                    <div class="responsive-flex-3">
+                        <a href="" >
+                            <div class="py-1 ml-2">
+                                <button class="footer-btn-a">
+                                    <i class="fa-regular fa-chess-king ml-1"></i>
+                                    قوانین و شرایط استفاده
+                                </button>
+                            </div>
+                        </a>
+                        <div class="flex py-1">
+                            <a href="">
+                                <div class="ml-2 ">
+                                    <button class="footer-btn-a">
+                                        <i class="fa-solid fa-phone ml-1"></i>
+                                            تماس با میلین
+                                    </button>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class=" ">
+                                    <button class="footer-btn-a">
+                                        <i class="fa-regular fa-user ml-1"></i>
+                                        ورود
+                                    </button>
+                                </div>
+                            </a>
+                        </div class="py-1">
+                    </div>
+                    <a href="">
+                        <div class="py-1">
+                            <button class="footer-btn-b">
+                                <i class="fa-solid fa-building-shield ml-1"></i>
+                                حریم خصوصی
+                            </button>
+                        </div>
+                    </a>
+                </div>
+                <div class="responsive-width-2 responsive-P pr-2">
+                    <h6 class="text-lg font-bold">تماس با ما</h6>
+                    <div class="flex-col">
+                        <p class="text-gray py-2">
+                            <i class="fa-solid fa-clock footer-icon-b"></i>
+                            شنبه تا چهارشنبه از ساعت ۸ الی ۱۹
+                        </p>
+                        <p class="text-gray py-2">
+                            <i class="fa-solid fa-earth-americas footer-icon-b"></i>
+                            ایران، تهران، کارخانه نوآوری آزادی
+                        </p>
+                        <p class="text-gray py-2">
+                            <i class="fa-solid fa-at text-[#f63e02] ml-2"></i>
+                            آدرس ایمیل info@myelin.ms
+                        </p>
+                    </div>
+                    
+                    <a href="">
+                        <div class=" pt-5 pr-2">
+                            <button class="footer-btn-c ">
+                                <i class="fa-regular fa-user ml-1"></i>
+                                چت آنلاین
+                            </button>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="py-10">
+            <div class="mycintainer">
+                <p class="text-xs font-bold text-gray-500 text-center">
+                    میلین © تمامی حقوق مطالب محفوظ است.
+                </p>
+            </div>
+            
+        </section>
+    </footer>
+    
+</body>
+</html>
